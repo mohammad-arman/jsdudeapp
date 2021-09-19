@@ -1,38 +1,174 @@
-.App {
+.container{
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+/* navigation styles */
+.header-bg{
+  background-color: #101010;
+  padding: 20px 0;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  color: gray;
+  font-size: 1.3em;
+  margin: 0;
+  cursor: pointer;
+  transition: all .5s;
+}
+.logo:hover{
+  color: #fff;
+}
+.signbtn{
+  color: #fff;
+  background-color: #5cb85c;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all .5s;
+  border: 0;
+}
+.signbtn:hover{
+  background-color: #47a447;
+}
+/* main header styles */
+.main-header-bg{
+  background-color: #eee;
+}
+.header-ctn{
+  padding: 80px 0;
+}
+.header-ctn h1{
+  margin: 0;
+  font-size: 63px;
+  color: #333;
+}
+.header-ctn p{
+  font-size: 21px;
+  color: #333;
+}
+.header-ctn a{
+  font-weight: bold;
+  color: #428bca;
+  text-decoration: none;
+  transition: all .5s;
+}
+.header-ctn a:hover{
+  text-decoration: underline;
+}
+.learnbtn{
+  background-color: #428bca;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all .5s;
+}
+.learnbtn:hover{
+  background-color: #3276b1;
+}
+
+
+.main-flex{
+  display: flex;
+  padding: 50px 0;
+}
+/* left side items styles */
+.left-side{
+  width: 70%;
+  padding-right: 40px;
+}
+.confused h3{
+  font-size: 24px;
+  color: #333;
+}
+.confused span{
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+.tutorials{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+.tutorial a{
+  color: #428bca;
+  text-decoration: none;
+  font-size: 1em;
+  transition: all .5s;
+}
+.tutorial a:hover{
+  color: #2a6496;
+  text-decoration: underline;
+}
+.tutorial p{
+  color: #333;
+}
+/* right side items styles */
+.right-side{
+  width: 30%;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+}
+.personal-training{
+  padding: 10px 20px;
+}
+.personal-training a{
+  color: #428bca;
+  text-decoration: none;
+  transition: all .5s;
+}
+.personal-training a:hover{
+  color: #2a6496;
+  text-decoration: underline;
+}
+.recent-videos{
+  padding: 10px 20px;
+}
+.recent-videos ul li a{
+  color: #428bca;
+  text-decoration: none;
+  transition: all .5s;
+}
+.recent-videos ul li a:hover{
+  color: #2a6496;
+  text-decoration: underline;
+}
+.recent-btn{
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all .5s;
+}
+.recent-btn:hover{
+  color: #333;
+  background-color: #ebebeb;
+  border: 1px solid #adadad;
+}
+/* footer styles */
+.footer-part{
+  padding: 20px 0;
+  border-top: 1px solid #adadad;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-part h3{
+  margin: 0;
 }
